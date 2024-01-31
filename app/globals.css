@@ -3,18 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-hex: #D94848;
-  --background-hex: #FFF8F2;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-hex: #fff;
-    --background-hex: #000;
-  }
+  --blue: #376FB9;
+  --light: #f9f9f9;
 }
 
 body {
-  color: var(--foreground-hex);
-  background: var(--background-hex);
+  color: var(--blue);
+  background: var(--blue);
+  font-family: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
 }
