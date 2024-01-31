@@ -1,3 +1,6 @@
+import Github from "../svg/Github";
+import LinkedIn from "../svg/LinkedIn";
+
 export default function Nav() {
   const navlinks = [
     {
@@ -32,20 +35,18 @@ export default function Nav() {
       <div>
         <ul className="flex flex-col gap-[2px]">{navmap}</ul>
       </div>
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-end gap-2">
         <a
           href="https://github.com/cvsluis"
-          className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
           target="blank"
         >
-          github
+          <Github />
         </a>
         <a
           href="https://www.linkedin.com/in/caitlinvandersluis/"
-          className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
           target="blank"
         >
-          linkedin
+          <LinkedIn />
         </a>
       </div>
     </nav>
