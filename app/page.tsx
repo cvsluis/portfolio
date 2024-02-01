@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,17 +17,44 @@ export default function Home() {
     });
   }, []);
 
+  const helloRef = useRef();
+  const aboutRef = useRef();
+  const projectsRef = useRef();
+
+  const navlinks = [
+    {
+      id: "hello",
+      title: "HELLO",
+      path: "/",
+      ref: helloRef,
+    },
+    {
+      id: "about",
+      title: "ABOUT",
+      path: "#about",
+      ref: aboutRef,
+    },
+    {
+      id: "projects",
+      title: "PROJECTS",
+      path: "#projects",
+      ref: projectsRef,
+    },
+  ];
+
   return (
     <main className="bg-light">
       <div className="container mx-auto">
-        <Hello />
-        <Nav />
-        <div data-aos="fade-up">
+        <section id="hello" ref={helloRef}>
+          <Hello />
+        </section>
+        <Nav navlinks={navlinks} />
+        <section id="about" ref={aboutRef}>
           <AboutMe />
-        </div>
-        <div data-aos="fade-up">
+        </section>
+        <section id="projects" ref={projectsRef}>
           <Projects />
-        </div>
+        </section>
       </div>
     </main>
   );
