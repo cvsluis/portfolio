@@ -1,22 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import { useRef } from "react";
 import Hello from "./components/Hello";
 import Nav from "./components/Nav";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-      once: false,
-    });
-  }, []);
-
   const helloRef = useRef();
   const aboutRef = useRef();
   const projectsRef = useRef();
