@@ -100,20 +100,13 @@ export default function Nav({
   });
 
   return (
-    <nav className="sticky top-16 text-sm hidden md:flex flex-row items-end justify-between px-12 lg:px-0 z-50">
+    <nav className="sticky top-16 text-sm hidden md:flex flex-row items-end justify-between px-12 z-50">
       <div>
         <ul className="flex flex-col gap-[2px]">{navmap}</ul>
       </div>
       <div className="flex flex-col items-end gap-2">
-        <a href="https://github.com/cvsluis" target="blank">
-          <Github />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/caitlinvandersluis/"
-          target="blank"
-        >
-          <LinkedIn />
-        </a>
+        <Github />
+        <LinkedIn />
       </div>
     </nav>
   );
