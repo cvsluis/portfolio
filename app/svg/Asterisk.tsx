@@ -7,7 +7,7 @@ const Asterisk = ({}) => (
       width: "1em",
       height: "1em",
       verticalAlign: "middle",
-      fill: "var(--pink)",
+      fill: "var(--pinkred)",
       overflow: "hidden",
     }}
     viewBox="0 0 1024 1024"
