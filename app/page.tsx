@@ -33,16 +33,16 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-light">
+    <main>
       <div className="container mx-auto">
         <section id="hello" ref={helloRef}>
           <Hello />
         </section>
         <Nav navlinks={navlinks} />
-        <section id="about" ref={aboutRef}>
+        <section id="about" ref={aboutRef} className="px-6 py-8 md:px-36 md:py-16">
           <AboutMe />
         </section>
-        <section id="projects" ref={projectsRef}>
+        <section id="projects" ref={projectsRef} className="px-6 py-8 md:px-36 md:py-16">
           <Projects />
         </section>
       </div>
