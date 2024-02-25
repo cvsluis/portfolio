@@ -1,8 +1,9 @@
 "use client";
-import { MutableRefObject, useEffect, useState } from "react";
-import Asterisk from "../svg/Asterisk";
-import Github from "../svg/Github";
-import LinkedIn from "../svg/LinkedIn";
+import { useEffect, useState } from "react";
+import Asterisk from "../ui/svg/Asterisk";
+import Github from "../ui/svg/Github";
+import LinkedIn from "../ui/svg/LinkedIn";
+import Link from "next/link";
 
 const nearestIndex = (
   currentPosition: any,
@@ -10,7 +11,7 @@ const nearestIndex = (
     id: string;
     title: string;
     path: string;
-    ref: MutableRefObject<undefined>;
+    ref: any;
   }[],
   startIndex: number,
   endIndex: number
@@ -61,7 +62,7 @@ export default function Nav({
     id: string;
     title: string;
     path: string;
-    ref: MutableRefObject<undefined>;
+    ref: any;
   }[];
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -89,23 +90,23 @@ export default function Nav({
             <Asterisk />
           </div>
         )}
-        <a
+        <Link
           href={link.path}
           className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >
           {link.title}
-        </a>
+        </Link>
       </li>
     );
   });
 
   return (
-    <nav className="sticky top-16 text-sm hidden md:flex flex-row items-end justify-between px-12 z-50">
+    <nav className="sticky top-16 text-sm hidden md:flex flex-row items-end justify-between pl-10 pr-8 lg:pl-6 lg:pr-4 z-50">
       <div>
         <ul className="flex flex-col gap-[2px]">{navmap}</ul>
       </div>
       <div className="flex flex-col items-end gap-2">
-        <Github />
+        <Github link="https://github.com/cvsluis" />
         <LinkedIn />
       </div>
     </nav>
