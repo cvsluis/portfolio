@@ -4,6 +4,7 @@ import Header from "@/app/ui/project/header";
 import Carousel from "@/app/ui/project/carousel";
 import Details from "@/app/ui/project/details";
 import Navigation from "@/app/ui/project/navigation";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Caitlin Vandersluis | Projects",
@@ -15,7 +16,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   const numOfProjects = projects.length;
 
   if (!project) {
-    return <div>Project not found!</div>;
+    notFound();
   }
 
   return (
