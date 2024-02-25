@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <main className="container mx-auto p-4 md:py-16 min-h-screen flex flex-col justify-between gap-4 md:gap-0">
+    <main className="container mx-auto p-4 md:py-16 min-h-screen flex flex-col justify-between">
       <Header />
 
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-8">

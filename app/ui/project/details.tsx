@@ -10,7 +10,12 @@ export default function Details({
 }: Project) {
   return (
     <section className="font-outfit flex-1 flex flex-col gap-4">
-      <h1 className="text-4xl">{name}</h1>
+      <div className="flex justify-between items-center">
+        <h1 className="text-4xl">{name}</h1>
+        <div className="flex md:hidden">
+          <Github link={github} />
+        </div>
+      </div>
 
       <div>
         <h2 className="font-bold text-base">About</h2>
@@ -22,12 +27,15 @@ export default function Details({
         <p>{stack}</p>
       </div>
 
-      <div>
-        <h2 className="font-bold text-base">Features</h2>
-        <p>{features}</p>
+      {features && (
+        <div>
+          <h2 className="font-bold text-base">Features</h2>
+          <p>{features}</p>
+        </div>
+      )}
+      <div className="hidden md:flex">
+        <Github link={github} />
       </div>
-
-      <Github link={github} />
     </section>
   );
 }
