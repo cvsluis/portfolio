@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { dm_serif_display, inter } from "./fonts";
+import { inter, outfit } from "./ui/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dm_serif_display.variable}`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>{children}</body>
     </html>
   );
