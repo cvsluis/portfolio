@@ -7,9 +7,9 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 
 export default function Home() {
-  const helloRef = useRef();
-  const aboutRef = useRef();
-  const projectsRef = useRef();
+  const helloRef = useRef<HTMLInputElement>(null);
+  const aboutRef = useRef<HTMLInputElement>(null);
+  const projectsRef = useRef<HTMLInputElement>(null);
 
   const navlinks = [
     {
@@ -38,11 +38,22 @@ export default function Home() {
         <section id="hello" ref={helloRef}>
           <Hello />
         </section>
+
         <Nav navlinks={navlinks} />
-        <section id="about" ref={aboutRef} className="px-6 py-8 md:px-36 md:py-16">
+
+        <section
+          id="about"
+          ref={aboutRef}
+          className="px-6 py-8 md:px-36 md:py-16"
+        >
           <AboutMe />
         </section>
-        <section id="projects" ref={projectsRef} className="px-6 py-8 md:px-36 md:py-16">
+
+        <section
+          id="projects"
+          ref={projectsRef}
+          className="px-6 py-8 md:px-36 md:py-16"
+        >
           <Projects />
         </section>
       </div>
