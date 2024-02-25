@@ -9,7 +9,7 @@ export default function Details({
   github,
 }: Project) {
   return (
-    <div className="font-outfit flex-1 flex flex-col gap-4">
+    <section className="font-outfit flex-1 flex flex-col gap-4">
       <h1 className="text-4xl">{name}</h1>
 
       <div>
@@ -28,6 +28,6 @@ export default function Details({
       </div>
 
       <Github link={github} />
-    </div>
+    </section>
   );
 }
