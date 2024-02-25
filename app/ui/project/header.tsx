@@ -9,7 +9,7 @@ export default function Header() {
         <Asterisk />
         PROJECTS
       </Link>
-      <Link href="/#projects"><Close /></Link>
+      <Link href="/"><Close /></Link>
     </div>
   );
 }
