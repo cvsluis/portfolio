@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Project from "./Project";
-import { projects } from "../projects";
+import { projects } from "../lib/data";
 
 export default function Projects() {
   useEffect(() => {
@@ -15,13 +15,9 @@ export default function Projects() {
   }, []);
 
   return (
-    <div
-      data-aos="fade-up"
-      className="p-8 md:px-36 md:py-16 min-h-screen flex flex-col"
-    >
-      <h2 className="font-bold font-dm text-5xl pb-8">Projects</h2>
-      <h3>Some of my favourite and most recent work!</h3>
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
+    <div data-aos="fade-up" className="flex flex-col items-center gap-4">
+      <h2 className="font-bold font-outfit text-5xl pb-8">Projects</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-auto gap-3 md:gap-4 mx-auto">
         {projects.map((project, index) => {
           return <Project key={"project" + index} {...project} />;
         })}
