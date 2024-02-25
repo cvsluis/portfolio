@@ -11,10 +11,11 @@ const config: Config = {
       colors: {
         blue: "var(--blue)",
         light: "var(--light)",
+        pinkred: "var(--pinkred)",
       },
       fontFamily: {
-        dm: ["var(--font-dm)"],
         inter: ["var(--font-inter)"],
+        outfit: ["var(--font-outfit)"],
       },
     },
   },
