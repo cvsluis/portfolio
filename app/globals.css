@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --blue: #376FB9;
   --light: #f9f9f9;
-  --pink: #D94848;
-}
-
-body {
-  color: var(--blue);
-  background: var(--blue);
-  font-family: var(--font-inter);
+  --pinkred: #D94848;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--light);
+}
+
+body {
+  color: black;
+  font-family: var(--font-outfit);
+  background-color: var(--light);
+  opacity: 1;
+  background-image: radial-gradient(#D5D4D5 5%, transparent 5%), radial-gradient(#D5D4D5 5%, #f9f9f9 5%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
 }
