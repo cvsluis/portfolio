@@ -16,7 +16,7 @@ export default function Hello() {
           <LinkedIn />
         </div>
       </div>
-      <img src="/images/caitlin-emoji.png" className="w-[260px] h-auto"></img>
+      <img src="/images/caitlin-emoji.png" className="w-[260px] h-auto" alt="Memoji of Caitlin"></img>
     </div>
   );
 }

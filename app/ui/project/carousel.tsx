@@ -27,7 +27,7 @@ export default function Carousel({ images }: { images: Images }) {
       {images.map((image, index) => {
         if (image.type === "video") {
           return (
-            <video width="100%" height="100%" controls key={"video" + index}>
+            <video width="100%" height="100%" controls key={"video" + index} title="Screen recording of project">
               <source src={image.url} type="video/mp4" />
             </video>
           );
@@ -37,6 +37,7 @@ export default function Carousel({ images }: { images: Images }) {
               src={image.url}
               key={"image" + index}
               className="w-full h-full object-contain"
+              alt="Screenshot of project"
             ></img>
           );
         }
