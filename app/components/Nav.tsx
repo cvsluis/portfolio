@@ -92,7 +92,7 @@ export default function Nav({
         )}
         <Link
           href={link.path}
-          className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:bg-pinkred after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >
           {link.title}
         </Link>

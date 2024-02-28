@@ -14,9 +14,13 @@ export default function Navigation({
 
   return (
     <nav className="flex justify-center items-center">
-      <Link href={`/projects/${minus}`}>&lt;</Link>
+      <Link href={`/projects/${minus}`} className="hover:scale-150 transition">
+        &lt;
+      </Link>
       <h3 className="mx-6 w-[90px] text-center">{name}</h3>
-      <Link href={`/projects/${plus}`}>&gt;</Link>
+      <Link href={`/projects/${plus}`} className="hover:scale-150 transition">
+        &gt;
+      </Link>
     </nav>
   );
 }
