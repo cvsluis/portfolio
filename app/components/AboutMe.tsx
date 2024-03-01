@@ -13,12 +13,25 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="p-8 md:px-36 md:py-16 flex flex-col">
-      <h2 className="font-bold font-dm text-5xl py-8">About Me</h2>
-      <div className="flex flex-col gap-3">
-        <p>
-          Hello and welcome! I'm Caitlin Vandersluis (van · der · sloos), and I'm excited that
-          you're here!
+    <div
+      data-aos="fade-up"
+      className="flex flex-col gap-8 items-center rounded-2xl"
+    >
+      <h2 className="font-bold font-outfit text-5xl pt-0">About Me</h2>
+      <div className="flex flex-col gap-3 items-center">
+        <p className="text-center">
+          Hello and welcome! I'm Caitlin Vandersluis (van · der · sloos), and
+          I'm excited that you're here!
+        </p>
+        <p className="text-center">
+          I’m a web developer transitioning from healthcare, and I’m so excited
+          to be using my skills to solve puzzles and make beautiful things! I am
+          fascinated by technology and would love to be a part of showing the
+          world how it can be used for good. 
+        </p>
+        <p className="text-center">
+          Check out some of my work and feel free to connect with me on
+          LinkedIn!
         </p>
       </div>
     </div>
