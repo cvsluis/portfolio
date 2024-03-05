@@ -20,14 +20,14 @@ export default function AboutMe() {
       <h2 className="font-bold font-outfit text-5xl pt-0">About Me</h2>
       <div className="flex flex-col gap-3 items-center">
         <p className="text-center">
-          Hello and welcome! I'm Caitlin Vandersluis (van · der · sloos), and
-          I'm excited that you're here!
+          Hello and welcome! I&apos;m Caitlin Vandersluis (van · der · sloos),
+          and I&apos;m excited that you&apos;re here!
         </p>
         <p className="text-center">
-          I’m a web developer transitioning from healthcare, and I’m so excited
-          to be using my skills to solve puzzles and make beautiful things! I am
-          fascinated by technology and would love to be a part of showing the
-          world how it can be used for good. 
+          I&apos;m a web developer transitioning from healthcare, and I&apos;m
+          so excited to be using my skills to solve puzzles and make beautiful
+          things! I am fascinated by technology and would love to be a part of
+          showing the world how it can be used for good.
         </p>
         <p className="text-center">
           Check out some of my work and feel free to connect with me on
