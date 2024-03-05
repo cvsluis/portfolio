@@ -1,5 +1,6 @@
 import Github from "../ui/svg/Github";
 import LinkedIn from "../ui/svg/LinkedIn";
+import Image from "next/image";
 
 export default function Hello() {
   return (
@@ -16,11 +17,14 @@ export default function Hello() {
           <LinkedIn />
         </div>
       </div>
-      <img
+      <Image
         src="/images/caitlin-emoji.png"
         className="w-[260px] h-auto"
         alt="Memoji of Caitlin"
-      ></img>
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
     </div>
   );
 }

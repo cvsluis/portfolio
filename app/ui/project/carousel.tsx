@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Images } from "@/app/lib/definitions";
+import Image from "next/image";
 
 export default function Carousel({ images }: { images: Images }) {
   var settings = {
@@ -33,12 +34,15 @@ export default function Carousel({ images }: { images: Images }) {
           );
         } else {
           return (
-            <img
+            <Image
               src={image.url}
               key={"image" + index}
               className="w-full h-full object-contain"
+              width={0}
+              height={0}
+              sizes="100vw"
               alt="Screenshot of project"
-            ></img>
+            />
           );
         }
       })}
