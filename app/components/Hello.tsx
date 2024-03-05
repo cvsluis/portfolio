@@ -3,7 +3,7 @@ import LinkedIn from "../ui/svg/LinkedIn";
 
 export default function Hello() {
   return (
-    <div className="p-8 md:py-0 md:px-28 flex min-h-screen md:min-h-[80vh] flex-col justify-center items-center gap-12">
+    <div className="p-8 md:py-0 md:px-28 flex min-h-screen md:min-h-[80vh] 2xl:min-h-[90vh] flex-col justify-center items-center gap-12">
       <div className="flex flex-col gap-8">
         <h1 className="font-outfit font-bold md:pt-48 text-center text-6xl md:text-8xl">
           Hi, I&apos;m Caitlin!
