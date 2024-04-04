@@ -9,7 +9,9 @@ export default function Header() {
         <Asterisk />
         PROJECTS
       </Link>
-      <Link href="/#projects"><Close /></Link>
+      <Link href="/#projects" className="hover:scale-110 transition">
+        <Close />
+      </Link>
     </div>
   );
 }
