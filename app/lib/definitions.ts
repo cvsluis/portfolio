@@ -5,7 +5,7 @@ export type Project = {
   images: Images;
   stack: string;
   description: string;
-  features: string | "";
+  features: string;
   github: string;
 };
 
