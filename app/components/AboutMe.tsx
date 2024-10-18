@@ -24,10 +24,12 @@ export default function AboutMe() {
           and I&apos;m excited that you&apos;re here!
         </p>
         <p className="text-center">
-          I&apos;m a web developer transitioning from healthcare, and I&apos;m
-          so excited to be using my skills to solve puzzles and make beautiful
-          things! I am fascinated by technology and would love to be a part of
-          showing the world how it can be used for good.
+          I&apos;m a web developer who has transitioned from healthcare into the
+          tech industry. I&apos;ve recently completed a successful internship at
+          an innovative tech company in Victoria, BC. I&apos;m so excited to be
+          using my skills to solve puzzles and make beautiful things! I am
+          fascinated by technology and would love to be a part of showing the
+          world how it can be used for good.
         </p>
         <p className="text-center">
           Check out some of my work and feel free to connect with me on
