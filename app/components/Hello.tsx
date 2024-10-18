@@ -10,7 +10,7 @@ export default function Hello() {
           Hi, I&apos;m Caitlin!
         </h1>
         <h3 className="text-center text-sm md:text-xl">
-          Full Stack Web Developer based in Victoria, BC
+          Full Stack Web Developer based in Kitchener, ON
         </h3>
         <div className="flex flex-row justify-center items-center md:hidden text-sm gap-3">
           <Github link="https://github.com/cvsluis" />
